@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Processing</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles/index.css') }}">
+</head>
+<body>
+    <div class="navBar">
+        <h1>Car Detection with HOG SVM</h1>
+        <h3>Pattern Recognition Final Project</h3>
+    </div> 
+    <div class="mainResult">
+        {% if result_path %}
+            <h1>Result</h1>
+            <div class="box-result">
+            {% if result_path.endswith('.jpg') %}
+                <img src="{{ result_path }}" alt="Result Image">
+            {% elif result_path.endswith('.mp4') %}
+                <video width="640" height="480" controls>
+                    <source src="{{ result_path }}" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>      
+            {% endif %}
+                <div class="buttonAction">
+                    <button class="kembali" onclick="window.location.href='/reset_result_path'">Kembali</button>
+                    <button class="download" ><a href="{{ result_path }}" download="result">Download</a></button>
+                </div>
+            </div>
+        {% else %}
+    </div>
+        <script>
+            window.location.replace("/");
+        </script>
+    {% endif %}
+
+</body>
+</html>
