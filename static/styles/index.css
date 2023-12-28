@@ -36,7 +36,7 @@ body{
     color: white;
     padding: 0.6em 2em;
     box-sizing: border-box;
-    background-color: #FE3456;
+    background-color: #DF4C27;
     border-radius: 0.2em;
 }
 
@@ -102,7 +102,7 @@ body{
 }
 
 .textFile{
-    background-color: #FC1A40;
+    background-color: #91423A;
     color: white;
     font-weight: 600;
     padding: 0.5em 1.5em;
@@ -112,7 +112,7 @@ body{
 }
 
 .textFile:hover{
-    background-color: #e8042a;
+    background-color: #EA3609;
 }
 
 form button{
@@ -150,77 +150,65 @@ input[type="file"] {
     width: 100%;
     display: flex;
     align-items: center;
+    height: 90vh;
+    justify-content: center;
+}
+
+.leftResult{
+    width: 35%;
+    height: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.leftResult img{
+    width: 70%;
+    object-fit: cover;
+}
+
+.rightResult{
+    width: 35%;
+    height: 80%;
+    display: flex;
+    align-items: start;
     justify-content: center;
     flex-direction: column;
 }
 
-.mainResult h1{
+.rightResult h1{
+    background-color: #91423A;
     color: white;
+    border-radius: 0.2em;
+    padding: 0.3em 2em;
+    font-weight: 700;
+    font-size: 1.4vw;
+}
+
+.predictionResult h3{
+    font-weight: 700;
+    font-size: 1.2vw;
     margin-top: 2em;
-    padding: 0.5em 4em;
-    font-weight: bold;
-    border-radius: 10px;
-    font-size: 1.5em;
-    color: #2D2D2D;
 }
 
-.box-result{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    width: 80%;
-    margin-top: 1em;
+.predictionResult h4{
+    margin-top: 0.2em;
+    font-weight: 600;
+    font-size: 1vw;
 }
 
-.box-result img{
-    width: 70%;
-    max-width: 50vw;
-}
-
-.box-result video{
-    width: 70%;
-}
-
-.buttonAction{
-    width: 60%;
-    margin-top: 1em;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.kembali{
-    padding: 1em 0em;
-    color: white;
-    background-color: #1b1b1b;
-    font-weight: 700;
-    outline: none;
-    border-radius: 10px;
-    border: none;
-    font-size: 1em;
-    width: 20%;
-    cursor: pointer;
-    margin-right: 1em;
-}
-
-.download{
-    color: white;
-    background-color: #ee1313;
-    outline: none;
-    border-radius: 10px;
-    border: none;
-    width: 20%;
-    padding: 1.2em 0em;
-    margin-left: 1em;
-}
-
-.download a{
+.rightResult a{
     text-decoration: none;
+    background-color: #272727;
     color: white;
     font-weight: 700;
-    cursor: pointer;
-    font-size: 1.2em;
+    padding: 0.5em 2em;
+    margin-top: 4em;
+    border-radius: 0.5em;
+}
+
+.rightResult a:hover{
+    background-color: #101010;
 }
 
 #loading-text{

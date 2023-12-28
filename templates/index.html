@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Image Processing</title>
+    <title>EEG VGG16 Model</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='styles/index.css') }}">
 </head>
 <script>
@@ -24,14 +24,14 @@
 </script>
 <body>
     <div class="navBar">
-        <h1>Car Detection System</h1>
-        <h3>Pattern Recognition Final Project</h3>
+        <h1>EEG Motor Movement System</h1>
+        <h3>Machine Learning Final Project</h3>
     </div>
     <div class="mainContent">
         <div class="infoContent">
-            <img src="../static/image/vehicle-icon-1-300x300-1.png" alt="">
-            <h1>Car Object Detection using HOG-SVM Model</h1>
-            <h4>By : <span class="name">Muhammad Luqman Aristio</span></h4>
+            <img src="../static/image/eeg icon.png" alt="">
+            <h1>EEG Motor Movement Image Classification</h1>
+            <h4>Method : <span class="name">VGG16 - CNN Algorithm</span></h4>
         </div>
         <div class="gap">
 
@@ -41,12 +41,12 @@
                 <label for="file" class="custom-file-upload">
                     <span class="textFile" id="file-name">Choose File</span>
                 </label>
-                <input type="file" name="file" id="file" accept=".jpg, .jpeg, .png, .mp4" onchange="displayFileName()">
+                <input type="file" name="file" id="file" accept="image/jpeg, image/png" onchange="displayFileName()">
                 <button type="submit" class="textUpload">Upload</button>
             </form>
             <p id="loading-text" style="display: none;">Mohon tunggu beberapa saat jika Anda mengupload video...</p>
             
-            <h3>Tidak punya sampel? <a href="https://drive.google.com/drive/folders/1k-Q9T3exmiX0lon7MH4Hk777f3zRiXHF?usp=sharing" target="_blank">Coba download disini!</a> </h3>
+            <h3>Tidak punya sampel? <a href="https://drive.google.com/drive/folders/1qBkPwb4k8zP_FvCpoTLAH1rZCXk0Uf9x?usp=sharing" target="_blank">Coba download disini!</a> </h3>
         </div>
         
     </div>
