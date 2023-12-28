@@ -171,7 +171,7 @@ input[type="file"] {
     width: 35%;
     height: 80%;
     display: flex;
-    align-items: start;
+    align-items: center;
     justify-content: center;
     flex-direction: column;
 }
@@ -183,6 +183,13 @@ input[type="file"] {
     padding: 0.3em 2em;
     font-weight: 700;
     font-size: 1.4vw;
+}
+
+.predictionResult{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: c;
 }
 
 .predictionResult h3{
